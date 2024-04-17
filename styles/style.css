@@ -6,6 +6,10 @@
   flex-direction: column;
   gap: clamp(2.5rem, 0.9002rem + 6.8259vw, 3.75rem);
   background-color: var(--color-bg);
+  background-image: var(--image-bg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
   font-family: IBM Plex Mono, monospace;
   font-size: 18px;
@@ -18,10 +22,7 @@
   min-block-size: 668px;
   block-size: 100%;
   justify-items: end;
-  background-image: var(--image-bg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  
 }
 
 .decorated-zone {
@@ -163,30 +164,30 @@
   gap: 20px;
 }
 
-.section__article {
+.card {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.section__article-link {
+.card-link {
   text-shadow: 2px 2px 0 var(--color-accent);
   text-decoration: none;
 }
 
-.section__article-link:hover {
+.card-link:hover {
   border-block-end: 1px solid currentColor;
 }
 
-.section__article-link:focus {
+.card-link:focus {
   outline: none;
 }
 
-.section__article-link:focus-visible {
+.card-link:focus-visible {
   outline: 1px solid currentColor;
 }
 
-.section__article-title {
+.card-title {
   font-weight: 400;
 }
 
@@ -218,7 +219,6 @@
 
   .header {
     min-block-size: 1024px;
-    block-size: 100%;
   }
 
   .header__title {
@@ -295,15 +295,13 @@
 
   .footer {
     min-block-size: 1024px;
-    block-size: 100%;
-  }
+    }
 }
 
 @media (min-width: 1024px) {
 
   .header {
     min-block-size: 768px;
-    block-size: 100%;
   }
 
   .header__theme-menu {
@@ -326,7 +324,6 @@
 
   .footer {
     min-block-size: 768px;
-    block-size: 100%;
   }
 
 }
